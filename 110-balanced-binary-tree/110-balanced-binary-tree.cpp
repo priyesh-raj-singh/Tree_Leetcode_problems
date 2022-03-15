@@ -16,10 +16,10 @@ public:
             return 0;
         
         int leftHeight = height(root->left);
-        if(leftHeight ==-1)
-            return -1;
+        // if(leftHeight ==-1)
+        //     return -1;
         int rightHeight = height(root->right);
-        if(rightHeight==-1)
+        if(rightHeight==-1||leftHeight ==-1)
             return -1;
         if(abs(leftHeight-rightHeight)>1)
             return -1;
