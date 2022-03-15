@@ -27,7 +27,11 @@ public:
         return max(leftHeight , rightHeight)+1;
     }
     bool isBalanced(TreeNode* root) {
-        return height(root)!=-1;
+        int ans = height(root);
+        if(ans==-1)
+            return false;
+        else
+            return true;
         
 
         
